@@ -7,10 +7,10 @@
     <script type="text/javascript">
       // Thunkable에서 데이터를 받아 처리하는 함수
       ThunkableWebviewerExtension.receiveMessage(function(message) {
-        // Thunkable에서 전달된 데이터
-        var number1 = message;
+        // Thunkable에서 전달된 데이터를 숫자로 변환
+        var number1 = parseInt(message);
 
-        // 두 숫자를 더한 결과 계산
+        // 숫자를 1 더한 결과 계산
         var sum = number1 + 1;
 
         // 계산된 결과를 Thunkable으로 다시 전송
